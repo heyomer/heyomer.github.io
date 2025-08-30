@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ömer Demirayak — Robotics & Control</title>
+  <meta name="description" content="Robotics engineer focused on legged robots, RL, optimization-based control, and 3D simulation. Portfolio and publications." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ömer Demirayak — Robotics & Control" />
+  <meta property="og:description" content="Legged robots, reinforcement learning, optimization-based control, and 3D simulations." />
+  <meta property="og:image" content="assets/img/og.jpg" />
+  <meta property="og:url" content="https://heyomer.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c0f;--text:#e8eaf2;--muted:#b3b7c6;--card:#141821;--border:#262a36;--accent:#6ea8fe;--accent-contrast:#0b1426
+    }
+    html[data-theme="light"]{--bg:#f7f8fb;--text:#131728;--muted:#5d6275;--card:#fff;--border:#e5e7ef;--accent:#2f6df6;--accent-contrast:#eff4ff}
+    html[data-theme="dark"]{--bg:#0b0c0f;--text:#e8eaf2;--muted:#b3b7c6;--card:#141821;--border:#262a36;--accent:#6ea8fe;--accent-contrast:#0b1426}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Inter",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px;margin-inline:auto;padding:28px 20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .toggle{background:transparent;border:1px solid var(--border);border-radius:12px;padding:8px 12px;color:var(--text);cursor:pointer}
+    header.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+    @media (max-width:880px){header.hero{grid-template-columns:1fr}}
+    .title{font-size:clamp(28px,3.2vw,42px);margin:4px 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:white;border-radius:12px;padding:10px 14px;border:1px solid transparent}
+    .btn:hover{box-shadow:0 6px 18px rgba(60,94,200,.35);text-decoration:none}
+    .btn.ghost{background:transparent;color:var(--accent);border-color:var(--border)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width:880px){.grid.cols-2{grid-template-columns:1fr}}
+    .pill{font-size:12px;color:var(--muted);border:1px solid var(--border);padding:4px 8px;border-radius:999px}
+    .foot{margin-top:32px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="nav" style="display:flex;gap:10px;flex-wrap:wrap">
+        <span class="pill">Robotics</span><span class="pill">Legged</span><span class="pill">RL</span>
+      </div>
+      <button class="toggle" id="themeToggle" aria-label="Toggle theme">🌙/☀️</button>
+    </div>
+
+    <header class="hero">
+      <div>
+        <h1 class="title">Ömer Demirayak</h1>
+        <p class="subtitle">Robotics Engineer — Legged locomotion, RL, optimization-based control</p>
+        <div class="card">
+          <p style="margin:0"><em>"Proficient in MATLAB/Simulink, C/C++, ARM programming, and robotics, with expertise in legged robots, reinforcement learning, optimization-based control, and 3D simulations. Currently working in a quadruped robot company, focusing on advanced robotics and control systems."</em></p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn" href="#publications">Publications</a>
+          <a class="btn ghost" href="mailto:email@example.com">Contact</a>
+          <!-- Optional: add CV link later -->
+        </div>
+      </div>
+      <div class="card" style="min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center">
+        <div>
+          <div style="font-weight:700;font-size:20px">Legged Robots & RL</div>
+          <div class="subtitle">All-terrain locomotion • Stair traversal • Push & fall recovery</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="publications" style="margin-top:22px">
+      <h2 style="margin:0 0 10px">Publications</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3 style="margin:0 0 6px"><a href="/all-terrain-quadrupeds/">All‑Terrain Quadrupeds: A Unified Policy for Locomotion, Fall & Push Recovery with Latent Estimation</a></h3>
+          <p class="subtitle" style="margin:0 0 10px">Preprint • 2025</p>
+          <p class="subtitle">Proprioception‑only unified policy with latent context for running, stairs, uneven terrain, and robust recovery; sim‑to‑real on Unitree A1.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+            <span class="pill">Quadruped</span><span class="pill">RL</span><span class="pill">Sim‑to‑Real</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3 style="margin:0 0 6px"><a href="/self-recovery-asym-ppo/">Efficient and Robust Self‑Recovery of Quadruped Robots Using Asymmetric Proximal Policy Optimization</a></h3>
+          <p class="subtitle" style="margin:0 0 10px">Preprint • 2025</p>
+          <p class="subtitle">Asymmetric PPO for fast, reliable fall recovery on quadrupeds under severe perturbations and sensor delays.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+            <span class="pill">Self‑Recovery</span><span class="pill">Asymmetric PPO</span><span class="pill">Hardware</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="demos" style="margin-top:22px">
+      <h2 style="margin:0 0 10px">Real‑World Demos</h2>
+      <article class="card">
+        <h3 style="margin:0 0 6px"><a href="/extreme-rl-trials/">Extreme RL Trials — Unitree A1</a></h3>
+        <p class="subtitle" style="margin:0 0 10px">A curated gallery of real‑world videos stress‑testing different RL policies on the Unitree A1: uneven terrain, high pushes, delays, slippery surfaces, and more.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <span class="pill">Demos</span><span class="pill">Robustness</span><span class="pill">Unitree A1</span>
+        </div>
+      </article>
+    </section>
+
+    <section style="margin-top:22px" class="card">
+      <h2 style="margin-top:0">Links</h2>
+      <ul style="margin:8px 0 0">
+        <li><a href="https://www.linkedin.com/in/omerdemirayak/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/heyomer" target="_blank" rel="noopener">GitHub</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </section>
+
+    <p class="foot">© <span id="year"></span> Ömer Demirayak</p>
+  </div>
+
+  <script>
+    (function(){
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const saved = localStorage.getItem('theme');
+      const root = document.documentElement;
+      const initial = saved || (prefersDark ? 'dark' : 'light');
+      root.setAttribute('data-theme', initial);
+      document.getElementById('themeToggle').addEventListener('click',()=>{
+        const cur = root.getAttribute('data-theme');
+        const next = cur==='dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
