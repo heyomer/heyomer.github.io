@@ -24,7 +24,7 @@
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h1 class="title is-2" style="margin-bottom: 0.3rem;">All-Terrain Quadrupeds: A Unified Policy for Locomotion, Fall & Push Recovery with Latent Estimation</h1>
+      <h1 class="title is-2" style="margin-bottom: 1.5rem;">All-Terrain Quadrupeds: A Unified Policy for Locomotion, Fall & Push Recovery with Latent Estimation</h1>
       <p class="subtitle" style="margin-bottom: 0.6rem;">International Conference on Robotics and Artificial Intelligence (ICRAI 2025)</p>
       <div class="is-size-5 publication-authors" style="margin-bottom:0.25rem;">
         <span class="author-block"><a href="https://www.linkedin.com/in/omerdemirayak/" target="_blank" rel="noopener">Ömer Demirayak</a>,</span>
@@ -56,7 +56,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>We present a single proprioception‑only RL policy that unifies running, stair traversal, uneven‑terrain walking, and robust fall/push recovery without mode switching. A short history encoder learns a latent context capturing slope, friction, step height, and external impulses. Trained in large‑scale simulation with extensive domain randomization and deployed zero‑shot on Unitree A1.</p>
+          <p>This paper presents a single-policy reinforcement-learning framework that enables a quadruped robot to walk, run, climb irregular stairs, traverse rough terrain, and perform agile self-righting after falls or strong pushes—entirely without exteroceptive vision or hand-coded mode switches. The policy is trained end-to-end in simulation together with a contrastive latent-information encoder that extracts terrain and disturbance cues directly from short proprioceptive histories. A curriculum and broad domain randomization yield a controller that transfers to hardware with no additional tuning. Extensive tests in both the simulator and on a real Unitree A1 confirm that the same policy performs all target behaviors seamlessly across previously unseen environments, demonstrating that proprioception-only learning can produce truly self-reliant quadrupeds with minimal engineering effort.</p>
         </div>
       </div>
     </div>
