@@ -20,6 +20,13 @@
   <meta property="og:description" content="Results from experimental RL reward designs showing different emergent modes." />
   <meta property="og:image" content="/static/images/og.jpg" />
   <meta property="og:type" content="website" />
+  <style>
+    /* Uniform 16:9 responsive embeds */
+    .video-box{position:relative;padding-top:56.25%;height:0;overflow:hidden;border-radius:8px}
+    .video-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    /* Single-column spacing */
+    .card + .card{margin-top:18px}
+  </style>
 </head>
 <body>
 
@@ -45,7 +52,7 @@
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h1 class="title is-1" style="margin-bottom:0.6rem;">extreme-rl-trials</h1>
+      <h1 class="title is-1" style="margin-bottom:1.2rem;">extreme-rl-trials</h1>
       <p class="subtitle">This page presents results from experimental RL reward designs, showing different emergent modes obtained during trials on the Unitree A1.</p>
     </div>
   </div>
@@ -54,49 +61,32 @@
 <!-- Videos -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns">
-      <div class="column">
-        <div class="card">
-  <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Tripod Mode</h3></div>
-  <div class="card-image">
-    <figure class="image is-16by9">
-      <iframe src="https://www.youtube-nocookie.com/embed/v3RXCWXdHHw?rel=0" title="Tripod Mode" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </figure>
-  </div>
-</div>
-      </div>
-      <div class="column">
-        <div class="card">
-  <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Degraded Mode</h3></div>
-  <div class="card-image">
-    <figure class="image is-16by9">
-      <iframe src="https://www.youtube-nocookie.com/embed/yPwrD6Uczas?rel=0" title="Degraded Mode" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </figure>
-  </div>
-</div>
+
+    <div class="card">
+      <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Tripod Mode</h3></div>
+      <div class="video-box">
+        <iframe src="https://www.youtube-nocookie.com/embed/v3RXCWXdHHw?rel=0" title="Tripod Mode" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div class="columns">
-      <div class="column">
-        <div class="card">
-  <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Biped Mode</h3></div>
-  <div class="card-image">
-    <figure class="image is-16by9">
-      <iframe src="https://www.youtube-nocookie.com/embed/5u-6EXifb3Q?rel=0" title="Biped Mode" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </figure>
-  </div>
-</div>
+    <div class="card">
+      <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Degraded Mode</h3></div>
+      <div class="video-box">
+        <iframe src="https://www.youtube-nocookie.com/embed/yPwrD6Uczas?rel=0" title="Degraded Mode" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <div class="column">
-        <div class="card">
-  <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Fall Recovery</h3></div>
-  <div class="card-image">
-    <figure class="image is-16by9">
-      <iframe src="https://www.youtube-nocookie.com/embed/NRVPZufXTAE?rel=0" title="Fall Recovery" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </figure>
-  </div>
-</div>
+    </div>
+
+    <div class="card">
+      <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Biped Mode</h3></div>
+      <div class="video-box">
+        <iframe src="https://www.youtube-nocookie.com/embed/5u-6EXifb3Q?rel=0" title="Biped Mode" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content has-text-centered"><h3 class="title is-5" style="margin:0;">Fall Recovery</h3></div>
+      <div class="video-box">
+        <iframe src="https://www.youtube-nocookie.com/embed/NRVPZufXTAE?rel=0" title="Fall Recovery" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
